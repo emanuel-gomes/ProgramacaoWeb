@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formulário e Tabela</title>
+  </head>
+  <body>
+    <table border="3" cellpadding="20">
+      <tr >
+        <th align="center" >Produto</th>
+        <th align="center">Preço (R$)</th>
+        <th align="center">Imagem</th>
+      </tr>
+      <tr>
+        <td align="center">Feijão</td>
+        <td align="center">4,20</td>
+        <td align="center" > <img src="imagem/feijao.jpg" alt="feijao" width="150" height="100"> </td>
+      </tr>
+      <tr>
+        <td align="center">Arroz</td>
+        <td align="center">3,50</td>
+        <td align="center"> <img src="imagem/arroz.jpg" alt="arroz" width="150" height="100"> </td>
+      </tr>
+    </table> <br>
+    <table border="3" cellpadding="20">
+      <tr >
+        <th align="center" >Produto</th>
+        <th align="center">Preço (R$)</th>
+        <th align="center">Imagem</th>
+      </tr>
+      <tr>
+        <td align="center">Feijão</td>
+        <td align="center" rowspan="3">4,20</td>
+        <td align="center" > <img src="imagem/feijao.jpg" alt="feijao" width="150" height="100"> </td>
+      </tr>
+      <tr>
+        <td align="center">Arroz</td>
+        <td align="center"> <img src="imagem/arroz.jpg" alt="arroz" width="150" height="100"> </td>
+      </tr>
+    </table> <br>
+    <form class="" action="index.html" method="post">
+      <label for="nome">Nome:</label> <input type="text" name="nome"> <br>
+      <label for="endereco">Endereço:</label> <input type="text" name="endereco"> <br>
+      <label for="estado">Estado:</label> <select class="" name="estado"> <br>
+        <option value="acre">Acre</option>
+        <option value="paraiba">Paraíba</option>
+        <option value="riograndedosul">Rio Grande do Sul</option>
+        <option value="goias">Góias</option>
+        <option value="amazonas">Amazonas</option>
+      </select> <br>
+      <label for="sexo">Sexo:</label> <input type="radio" name="sexo" value="M"> Masculino - <input type="radio" name="sexo" value="F"> Feminino <br>
+      <label for="matpref">Matérias preferidas:</label>
+      <input type="checkbox" name="matpref" value="P"> Português
+      <input type="checkbox" name="matpref" value="java"> Java
+      <input type="checkbox" name="matpref" value="math"> Matemática
+      <input type="checkbox" name="matpref" value="php"> PHP <br>
+      <label for="">Resumo de suas habilidades:</label> <textarea name="name" rows="3" cols="30"></textarea> <br>
+      <input type="submit" name="submit" value="Enviar!">
+    </form> <br>
+
+    <table border="1">
+      <tr>
+        <th colspan="2" align="center">Formulário de Cadastramento</th>
+      </tr>
+
+      <tr>
+        <td>Nome:</td>
+        <td><input type="text" name="nome"></td>
+      </tr>
+      <tr>
+        <td>Endereço:</td>
+        <td><input type="text" name="endereco"></td>
+      </tr>
+      <tr>
+        <td>Estado:</td>
+        <td><select class="" name="estado"> <br>
+          <option value="acre">Acre</option>
+          <option value="paraiba">Paraíba</option>
+          <option value="riograndedosul">Rio Grande do Sul</option>
+          <option value="goias">Góias</option>
+          <option value="amazonas">Amazonas</option>
+        </select></td>
+      </tr>
+      <tr>
+        <td>Sexo:</td>
+        <td><input type="radio" name="sexo" value="M"> Masculino - <input type="radio" name="sexo" value="F"> Feminino </td>
+      </tr>
+      <tr>
+        <td>Matérias preferidas:</td>
+        <td><input type="checkbox" name="matpref" value="P"> Português
+        <input type="checkbox" name="matpref" value="java"> Java
+        <input type="checkbox" name="matpref" value="math"> Matemática
+        <input type="checkbox" name="matpref" value="php"> PHP</td>
+      </tr>
+      <tr>
+        <td>Resumo de suas habilidades:</td>
+        <td><textarea name="name" rows="3" cols="30"></textarea></td>
+      </tr>
+      <tr>
+        <td colspan="2"><input type="submit" name="submit" value="Enviar!"></td>
+      </tr>
+    </table>
+
+
+    </option>
+
+  </body>
+</html>
